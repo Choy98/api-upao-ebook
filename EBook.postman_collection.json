@@ -1,0 +1,61 @@
+{
+	"info": {
+		"_postman_id": "a0b7457a-8db4-412c-a580-88db320f19b4",
+		"name": "EBook",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6246033"
+	},
+	"item": [
+		{
+			"name": "Registrar un libro",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "  {\r\n        \"title\":\"Spring Boot Action\",\r\n        \"author\":\"Juan Perez Rodrigues\",\r\n        \"description\": \"Libro para aprender las bases de Spring Boot\",\r\n        \"imageUrl\":\"https://www.google.com.pe/books/edition/Spring_Boot_in_Action/IzkzEAAAQBAJ?hl=en&gbpv=1&printsec=frontcover\"\r\n  }\r\n   ",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listado de todos los libros",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/v1/books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"v1",
+						"books"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
